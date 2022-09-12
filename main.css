@@ -191,6 +191,9 @@ body {
 #video video {
   height: 100vh;
 }
+#video video::-webkit-media-controls {
+  display: none;
+}
 #video .video-text {
   color: #bfbfb8;
   position: absolute;
@@ -464,6 +467,10 @@ mobile : 320px~ (320-767px)*/
 }
 /* mobile */
 @media screen and (max-width: 767px) {
+  html.menu-active {
+    height: 100%;
+    overflow: hidden;
+  }
   /* header */
   #header {
     height: 60px;
@@ -472,6 +479,13 @@ mobile : 320px~ (320-767px)*/
   }
   #header.menu-active {
     height: 100vh !important;
+    overflow: scroll;
+  }
+  #header.menu-active {
+    -ms-overflow-style: none;
+  }
+  #header.menu-active::-webkit-scrollbar {
+    display: none;
   }
   #header.menu-active #menu {
     opacity: 1;
@@ -696,6 +710,7 @@ mobile : 320px~ (320-767px)*/
     margin: 0 auto;
     opacity: 0;
     transition: opacity 500ms ease-in 250ms;
+    padding-bottom: 10%;
   }
   /* video */
   #video {

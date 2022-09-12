@@ -7,12 +7,14 @@ const viewChangeHandler = (mobile) => {
     // 모바일 메뉴 아이콘
     const menuIcon = document.querySelector(".menu-icon");
     const lines = document.querySelectorAll(".menu-icon div");
+    const html = document.querySelector("html");
     menuIcon.addEventListener("click", () => {
       for (i = 0; i < lines.length; i++) {
         lines[i].classList.toggle("animate");
         lines[i].classList.remove("start");
       }
       header.classList.toggle("menu-active");
+      html.classList.toggle("menu-active");
     });
     return;
   } else {

@@ -8,6 +8,9 @@
 
   video {
     height: 100vh;
+    &::-webkit-media-controls {
+      display: none;
+    }
   }
 
   .video-text {

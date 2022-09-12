@@ -34,6 +34,10 @@ mobile : 320px~ (320-767px)*/
 
 /* mobile */
 @media screen and (max-width: 767px) {
+  html.menu-active {
+    height: 100%;
+    overflow: hidden;
+  }
   /* header */
   #header {
     height: 60px;
@@ -42,6 +46,13 @@ mobile : 320px~ (320-767px)*/
 
     &.menu-active {
       height: 100vh !important;
+      overflow: scroll;
+      & {
+        -ms-overflow-style: none;
+      }
+      &::-webkit-scrollbar {
+        display: none;
+      }
 
       #menu {
         opacity: 1;
@@ -233,6 +244,7 @@ mobile : 320px~ (320-767px)*/
       margin: 0 auto;
       opacity: 0;
       transition: opacity 500ms ease-in 250ms;
+      padding-bottom: 10%;
     }
   }
 
