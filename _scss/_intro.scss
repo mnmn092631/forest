@@ -1,0 +1,71 @@
+/* intro */
+.section {
+  width: 100%;
+  padding: 10%;
+}
+
+#intro {
+  position: relative;
+
+  .intro-text {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+
+    .intro-title {
+      width: 100%;
+      color: $h1-color;
+      font-size: $h1-font-size;
+    }
+
+    .intro-content {
+      color: $content-color;
+      font-size: $content-font-size;
+      width: 60%;
+      margin-top: 5%;
+      padding-left: 5%;
+    }
+  }
+
+  .intro-img {
+    position: absolute;
+    top: 20%;
+    right: 15%;
+    max-width: 250px;
+    width: 30%;
+    height: 60%;
+    background-image: url("./assest/img/forest\ \(5\).jpg");
+    background-position: center;
+    background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 45%;
+      left: -20%;
+      background-color: #293e3f;
+      width: 60%;
+      height: 70%;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -15%;
+      right: -20%;
+      z-index: -1;
+      width: 60%;
+      height: 70%;
+      background-color: #5e798e;
+    }
+
+    .img-overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: #fff;
+      opacity: 0.1;
+    }
+  }
+}

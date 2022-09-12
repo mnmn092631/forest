@@ -1,0 +1,131 @@
+/* header */
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  color: $menu-color;
+  z-index: 100;
+  transition: height 350ms ease-in;
+
+  &.active {
+    height: 100vh;
+  }
+
+  #menu-bg {
+    width: 100%;
+    height: 70px;
+    background-color: $main-color;
+  }
+
+  #logo {
+    position: absolute;
+    top: 0;
+    left: 15%;
+
+    span {
+      font-family: "Dancing Script", cursive;
+      font-size: $h1-font-size;
+      font-weight: 300;
+      letter-spacing: -0.05em;
+      text-shadow: 1px 2px 2px #b0b0b0;
+      line-height: 70px;
+    }
+  }
+
+  .menu-icon {
+    display: none;
+
+    .start {
+      animation: none !important;
+    }
+  }
+
+  #menu {
+    width: 30%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-55%);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    > ul {
+      width: 25%;
+      font-size: rem(16);
+      &:hover {
+        text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.7);
+      }
+
+      > li {
+        > a {
+          display: block;
+          width: 100%;
+          height: 70px;
+          line-height: 70px;
+          transition: all 250ms ease-in-out;
+        }
+
+        ul {
+          width: 100%;
+          min-width: max-content;
+          opacity: 0;
+          background-color: $main-color;
+          transition: opacity 350ms ease-in;
+          display: none;
+
+          &.active {
+            display: block;
+            opacity: 1;
+          }
+
+          li {
+            width: 100%;
+            min-width: max-content;
+            background-color: $main-color;
+            text-shadow: none;
+
+            &:hover {
+              background-color: $content-color;
+            }
+
+            a {
+              display: block;
+              padding: 2vw;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #icon-menu-list {
+    position: absolute;
+    top: 0;
+    right: 15%;
+    width: 120px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    li {
+      transition: color 250ms ease-in;
+      cursor: pointer;
+      a {
+        display: block;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+      }
+      &:hover {
+        > a > i::before {
+          text-shadow: 0px 0px 5px #fff;
+        }
+      }
+    }
+  }
+}

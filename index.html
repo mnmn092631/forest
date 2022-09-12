@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Noto+Sans+KR:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <script
+      src="https://kit.fontawesome.com/ccf5e8ee35.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./main.js" defer></script>
+    <title>FOREST</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header">
+      <div id="menu-bg"></div>
+      <!-- 로고 -->
+      <h1 id="logo">
+        <a href="index.html" title="로고"><span>Forest</span></a>
+      </h1>
+
+      <!-- 모바일 햄버거 메뉴 아이콘 -->
+      <div class="menu-icon">
+        <div class="line-1 start"></div>
+        <div class="line-2 start"></div>
+        <div class="line-3 start"></div>
+      </div>
+
+      <!-- 메인 메뉴 -->
+      <nav id="menu">
+        <h2 class="sr-only">메인메뉴</h2>
+
+        <ul>
+          <li>
+            <a href="#">숲이란?</a>
+            <ul class="sub-menu">
+              <li><a href="#">개요</a></li>
+              <li><a href="#">분포</a></li>
+              <li><a href="#">정의</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">분류</a>
+            <ul class="sub-menu">
+              <li><a href="#">한대</a></li>
+              <li><a href="#">온대</a></li>
+              <li><a href="#">열대</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">국내</a>
+            <ul class="sub-menu">
+              <li><a href="#">국립수목원</a></li>
+              <li><a href="#">물향기수목원</a></li>
+              <li><a href="#">아침고요수목원</a></li>
+              <li><a href="#">광릉수목원</a></li>
+              <li><a href="#">사려니 숲길</a></li>
+              <li><a href="#">곶자왈</a></li>
+            </ul>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <a href="#">해외</a>
+            <ul class="sub-menu">
+              <li><a href="#">슈바르츠발트</a></li>
+              <li><a href="#">아마존 우림</a></li>
+              <li><a href="#">보르네오섬 열대우림 지대</a></li>
+              <li><a href="#">콩고 민주 공화국 열대우림 완충지</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- 아이콘 메뉴 -->
+      <ul id="icon-menu-list">
+        <li>
+          <a href="#" title="전화">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="이메일">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="공유">
+            <i class="fa-solid fa-share-from-square"></i>
+          </a>
+        </li>
+      </ul>
+    </header>
+    <!-- video -->
+    <section id="video">
+      <h2 class="sr-only">숲 동영상</h2>
+
+      <video autoplay="true" loop="true" muted="muted">
+        <source src="./assest/video/forest.mp4" type="video/mp4" />
+      </video>
+
+      <strong class="video-text">
+        Someone is sitting in the shade today <br />
+        because someone planted a tree a long time ago.
+        <p class="text-align-right">- Warrem Buffett</p>
+      </strong>
+    </section>
+    <!-- intro -->
+    <section id="intro" class="section">
+      <div class="intro-text">
+        <h1 class="intro-title">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </h1>
+        <p class="intro-content">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
+          ducimus esse perferendis non laudantium officia inventore quis
+          quibusdam earum eum. Quaerat totam atque explicabo animi voluptas.
+          Optio cum cumque aperiam! Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Ullam architecto tenetur dolores aspernatur earum
+          quo dolore est minima iure inventore, sequi explicabo autem error
+          atque, sit officiis quos provident. Soluta? Lorem ipsum dolor sit amet
+          consectetur, adipisicing elit. Necessitatibus modi cumque rerum sequi
+          recusandae qui, ea voluptates adipisci quod labore voluptatem
+          accusantium, temporibus, quasi in earum molestias minus esse
+          dignissimos. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Obcaecati qui aliquam dolore saepe ab eaque maxime ipsam ratione
+          cupiditate, ducimus, laborum accusantium! Aspernatur rem sed at et
+          saepe velit accusamus?
+        </p>
+      </div>
+
+      <div class="intro-img">
+        <div class="img-overlay"></div>
+      </div>
+    </section>
+    <!-- gallery -->
+    <section id="gallery" class="section">
+      <h1 class="gallery-title">Gallery</h1>
+
+      <div class="gallery-slider">
+        <input type="radio" name="gallery-rd" id="gallery-s1" checked />
+        <input type="radio" name="gallery-rd" id="gallery-s2" />
+        <input type="radio" name="gallery-rd" id="gallery-s3" />
+        <input type="radio" name="gallery-rd" id="gallery-s4" />
+        <input type="radio" name="gallery-rd" id="gallery-s5" />
+
+        <div class="gallery-slider-labels">
+          <label for="gallery-s1" id="gallery-lb1" class="active"></label>
+          <label for="gallery-s2" id="gallery-lb2"></label>
+          <label for="gallery-s3" id="gallery-lb3"></label>
+          <label for="gallery-s4" id="gallery-lb4"></label>
+          <label for="gallery-s5" id="gallery-lb5"></label>
+        </div>
+
+        <div id="gallery-img1" class="gallery-image"></div>
+        <div id="gallery-img2" class="gallery-image"></div>
+        <div id="gallery-img3" class="gallery-image"></div>
+        <div id="gallery-img4" class="gallery-image"></div>
+        <div id="gallery-img5" class="gallery-image"></div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer id="footer">
+      <h1 id="logo">
+        <a href="index.html" title="logo"><span>Forest</span></a>
+      </h1>
+
+      <ul class="footer-menu">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+
+      <ul class="footer-icons">
+        <li>
+          <a href="#" title="facebook" target="_blank">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="instagram" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" title="twitter" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+
+      <strong class="copyright">
+        ⓒ 2022, Lorem ipsum dolor sit amet consectetur
+      </strong>
+    </footer>
+  </body>
+</html>

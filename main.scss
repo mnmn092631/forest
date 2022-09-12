@@ -1,0 +1,87 @@
+// 변수
+$browser-font-size: 16;
+@function rem($pixels, $context: $browser-font-size) {
+  @return #{$pixels/$context}rem;
+}
+$main-color: #35403a;
+$menu-color: #fff;
+$h1-color: #bfbfb8;
+$content-color: #4c594f;
+$h1-font-size: rem(40);
+$medium-font-size: rem(30);
+$content-font-size: rem(20);
+$mobile-h1-font-size: rem(30);
+$mobile-medium-font-size: rem(25);
+$mobile-content-font-size: rem(16);
+
+/* Reset */
+ul,
+ol,
+li,
+dl,
+dt,
+dd {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button:focus,
+button:active,
+input:focus,
+input:active {
+  outline: none;
+  box-shadow: none;
+}
+
+button {
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: inherit;
+}
+
+button,
+input,
+textarea {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+/* sr-only */
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* 기본 설정 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+// import
+@import "./_scss/header.scss";
+@import "./_scss/video.scss";
+@import "./_scss/intro.scss";
+@import "./_scss/gallery.scss";
+@import "./_scss/footer.scss";
+@import "./_scss/mediascreen.scss";
