@@ -394,9 +394,14 @@ mobile : 320px~ (320-767px)*/
 
   #video {
     .video-text {
-      display: none;
+      font-size: rem(16);
+
+      .text-align-right {
+        font-size: rem(10);
+      }
     }
   }
+
   #footer {
     .footer-menu {
       flex-direction: column;
